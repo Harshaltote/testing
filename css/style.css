@@ -87,7 +87,7 @@ select option{}
 .dropdown ul.dropdown-menu:after { content: "";  border-bottom: 12px solid #ccc; border-right: 12px solid transparent;    border-left: 12px solid transparent;    position: absolute;    top: -12px;  right: 68%;  z-index: 9;}
 .navbar {min-height: 50px;    margin-bottom: -1px;}
 .header-bottom { /*background: linear-gradient(to right, #0064ac, #008aa8);*/  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);    margin-top: 18px;}
-.gradient{background: linear-gradient(88deg, #ab9459, #e1d39d); /*box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);*/}
+.gradient{background-image: linear-gradient(88deg, #ab9459, #f4e8b3); /*box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);*/}
 .menu li a {  font-family: 'Lato', sans-serif;    font-size: 14px;    text-align: left;    color: #ffffff; padding-top:13px; padding-bottom:13px;}
 .menu .active a{ font-weight:bold;}
 .footermenu{ width: 55%;  margin: 0 auto;   text-align: center;    float: none;}
@@ -231,7 +231,7 @@ svg circle {   fill: #626262;}
 .buy-sel .prod_buy li{ margin-bottom:15px;width:19%; padding:0px;}
 .buy-sel .prod_buy .buy_sell_cont{ font-size:12px;}
 .buy-sel .prod_buy{ padding:10px 5px;}
-.sel0 { padding-right: 0;}
+.sel0 { padding-right:: 0;}
 .sell-content { padding:10px 0px;}
 .sell-content ul{ padding:0px; margin:0px;}
 .sell-content ul li{ display:inline-block; padding:5px;}
@@ -517,14 +517,25 @@ svg circle {   fill: #626262;}
 .alert_not_tab .nav-tabs li a{ background:none; color:#808080; margin:0; border:none; padding:0px 10px;}
 .alert_not_tab .nav-tabs li a:hover{ background:none; color:#000; border:none; margin:0px;}
 .alert_not_tab .nav-tabs .active a{ background:none; border:none; color:#232323;}
-.symbol_hd{ color:#0062a9; font-size:14px;}
+.symbol_hd{ color:#0062a9; font-size:14px; cursor: pointer;}
 .stock_table .net-position th, .stock_table .net-position td{ width:auto;}
 .stock_table .buy_btn a {  color: #2ebf44;  padding: 1px 10px;    font-size: 16px;    border: 1px solid #2ebf44;}
 .stock_table .sell_btn a { color: #d71920;  padding: 1px 10px;    font-size: 16px;    border: 1px solid #d71920;}
+td.health-score { background: url("../images/health-meter.png") no-repeat; background-position: center; color:#2ebf44; text-align: center; vertical-align: bottom !important; }
+.health-score { background: url("../images/health-meter.png") no-repeat; background-position: center; color:#2ebf44; text-align: center; vertical-align: bottom !important; padding-top: 15px;}
+.hide-overflow-x { overflow-x: auto; }
+.sticky-header {top: 0; z-index: 100; position: fixed; width: 100%; background: #FFFFFF; padding: 10px 0; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);}
+
+/*#collapseStocks .net-position tr:nth-child(even) {background-color: #ffffff;} */
+/*#collapseStocks .net-position tr:nth-child(odd) {background-color: #f6f6f6;} */
+
+#headingStocks .form-group {padding-top: 10px;}
+#headingStocks select.form-control {border: none; box-shadow: none; border-bottom: 1px solid #979797; color:#232323;   border-radius: 0; padding:0px; height:20px;  -moz-appearance: none;  -webkit-appearance: none;   appearance: none;  background-image: url(../images/select_list_arrow.png);   background-repeat: no-repeat;  background-size: 9px;   background-position: right 10px; width: auto; min-width: 100px;}
+
 
 /*Buy Form Css*/
 .buy_form .modal { margin-bottom:60px;}
-.buy_form .modal-title{ font-size:28px; font-weight: 300; color:#fff;}
+.buy_form .modal-title{ font-size:32px; color:#fff;}
 .buy_form .modal-header{ padding:10px 15px 10px 42px;}
 .buy_form .close{ font-size:40px; color:#fff; opacity:1; text-shadow:none;}
 .buy_form .close:focus{ outline:none;}
@@ -665,7 +676,7 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
 .mob_nav_sec ul li{ list-style:none; display:inline-block; color:#fff; text-align:center; width:19%; padding:12px 0 0 0;}
 .mob_nav_sec ul li a{ color: #fff;
     display: block;
-    height: 8vh;
+    height: 6vh;
 }
 .mob_nav_sec .menu_hd{ font-size:20px;}
 .mob_nav_sec .sel{ border-bottom:2px solid #fff;}
@@ -675,13 +686,6 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
 	left:0px;
 }
   
-
-.open>.dropdown-menu {
-   
-    right: 0;
-    left: auto;
-}
-
  @media screen and (min-width: 320px) and (max-width: 480px) {
 .as0{ padding:0px !important;}	 
 .slider .flexslider{ background:#fff; padding:20px 0;}	
@@ -727,24 +731,20 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
 .recommandations_sec #long_term .scrolling table{margin-left:0px;}
 .recommandations_sec #health_score .scrolling table {  margin-left: 0px;}
 .recommandations_sec .scrolling td, th {  vertical-align: top;	padding: 10px;	min-width: 100px;}
-.recommandations_sec .scrolling tr td:first-child, .recommandations_sec .scrolling tr th:first-child {	position: absolute; /*position: relative; /*ie7*/	left: 0;width: 122px;  /*line-height:50px;*/ line-height:40px; z-index: 1;     box-shadow: 3px 0px 3px #ccc;   /* box-shadow: 5px 0px 0px 0px #888;*/}
+.recommandations_sec .scrolling tr td:first-child, .recommandations_sec .scrolling tr th:first-child {	position: absolute; /*position: relative; /*ie7*/	left: 0;width: 122px;  /*line-height:50px;*/ line-height:40px;     /* box-shadow: 5px 0px 0px 0px #888;*/}
 .recommandations_sec  .rec_list_sec .form-group{ margin-bottom:0px;}
-.buy_form .modal-body {
-    padding: 20px;
-    max-height: 80vh;
-    overflow-y: auto;
-}
+.buy_form .modal-body{ padding:20px;}
 .order_type_sec{ padding-left:0px;}
 
-.recommandations_sec .scrolling .inner tr:nth-child(odd) td:first-child{background: #fff}
+
 
 
 /**/
 
 .recommandations_sec .health_score_picks_table .scrolling tr th:first-child { /*height: 56px;  background-color: #f6f6f6;*/ line-height:56px;}
 .recommandations_sec #health_score .scrolling table .past_return_table{ margin-left: 0px;	position:relative;}
-.recommandations_sec #health_score .scrolling table .past_return_table th{ position:relative; background: none; line-height:25px;min-width: 55px !important; box-shadow: none !important}
-.recommandations_sec #health_score .scrolling table .past_return_table td{ position:relative; background: none; line-height:25px;min-width: 55px !important; box-shadow: none !important}
+.recommandations_sec #health_score .scrolling table .past_return_table th{ position:relative; line-height:25px;}
+.recommandations_sec #health_score .scrolling table .past_return_table td{ position:relative; line-height:25px;}
 
 /**/
 
@@ -756,6 +756,14 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
 .recommandations_sec .outer {position: relative}
 .recommandations_sec .inner {overflow-x: auto;	overflow-y: visible;	margin-left: 120px;}
 
+#collapseStocks .outer .inner table { table-layout: inherit; margin-left:-80px; /*margin-left: -100px;/*ie7*/}
+#collapseStocks .outer .inner table { margin-left:0px; }
+#collapseStocks .outer .inner table td, th {  vertical-align: top;	padding: 10px;	min-width: 100px;}
+#collapseStocks .outer .inner table tr td:first-child, #collapseStocks .outer .inner table tr th:first-child {	position: absolute; /*position: relative; /*ie7*/	left: 0;width: 142px; height:56px !important;}
+#collapseStocks .outer .inner table tr.stock_expand td { position: relative; }
+#collapseStocks .outer .inner table tr th:first-child { background-color: #f7f7f7; }
+#collapseStocks .outer {position: relative}
+#collapseStocks .outer .inner {overflow-x: auto;	overflow-y: visible;	margin-left: 140px;}
 
 /*Insights & Trends*/
 .insight{ font-size:14px;}
@@ -763,10 +771,7 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
 
 /*Navigation css start*/
 .hidden_ht{ height:56px;}
-.mob_nav_sec{ position: fixed; bottom: 0;    width: 100%;    /*height: 56px;    background-image: linear-gradient(88deg, #ab9459, #fcf1bd);*/ background-image: linear-gradient(88deg, #b49e64, #e2d49e); }
-	 .nav_outer_sec {
-    text-shadow: 1px 1px 3px #888888;
-}
+.mob_nav_sec{ position: fixed; bottom: 0;    width: 100%;    height: 56px;    /*background-image: linear-gradient(88deg, #ab9459, #fcf1bd);*/ background-image:linear-gradient(88deg, #ab9459, #f4e8b3); }
 .mob_nav_sec ul{ padding:0px; margin:0px;}
 .mob_nav_sec ul li{ list-style:none; display:inline-block; color:#fff; text-align:center; width:19%; padding:12px 0 0 0;}
 .mob_nav_sec ul li a{ color:#fff;}
@@ -800,6 +805,7 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
 .mob_pdb10{ padding-bottom:10px;}
 .mob_pdb20{ padding-bottom:20px;}
 .mob_pd0{ padding:0px;}
+.mob-pds15 {padding-right: 15px; padding-left: 15px;}
 
 
 /*Quotes css start*/
@@ -824,28 +830,8 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
 }
 @media screen and (min-width: 360px) and (max-width: 640px) {
 .mf0 { margin-left: 0px;}
-	
+
 } 
-@media screen and (min-width: 320px) and (max-width: 640px) {
-
-.markt {
-    position: absolute;
-    width: 100%;
-    background: #fff;
-    top: 80px;
-    z-index: 9;box-shadow: 1px 2px 4px #ccc; padding-bottom: 10px;
-}
-	.markt .col-xs-4{ text-align: center}
-	.markt .n1{display: block; margin: 0}
-	.fixed{position: fixed; top:0;  z-index: 9999;}
-	section.bg{margin-top: 90px;}
-}
-
-
 @media screen and (min-width: 1024px) {
 .container {  width: 1024px;}
-	#trends.flexslider .slides > li{display: block}
-}
-@media screen and (min-width: 480px) {
-	#trends.flexslider .slides > li{display: block}
 }
