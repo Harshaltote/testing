@@ -54,8 +54,6 @@ a:hover{ text-decoration:none;}
 .font30{ font-size:30px; vertical-align:middle;}
 .heading  .stock:before, .heading .mutual_funds:before{ color:#fff;}
 .icon-wrapper .icon-ys-notification:before{ color:#9b9b9b}
-.intraday_trades .icon-ys-equity:before{ color:#fff;}
-.intraday_trades .icon-ys-MFS:before{ color:#fff;}
 select option{}
 
 /*watchlist row div wise css*/
@@ -85,18 +83,15 @@ select option{}
 .right {float:right;}
 .dropdown-menu>li>a {   color: #428bca;}
 .dropdown ul.dropdown-menu { border-radius: 4px;   box-shadow: none;    margin-top: 20px;}
-/*.dropdown ul.dropdown-menu:before {content: "";   border-bottom: 10px solid #fff;    border-right: 10px solid transparent;    border-left: 10px solid transparent;    position: absolute;  top: -10px;  right: 68%;    z-index: 10;}
-
-.dropdown ul.dropdown-menu:after { content: "";  border-bottom: 12px solid #ccc; border-right: 12px solid transparent;    border-left: 12px solid transparent;    position: absolute;    top: -12px;  right: 68%;  z-index: 9;}*/
-
-
+.dropdown ul.dropdown-menu:before {content: "";   border-bottom: 10px solid #fff;    border-right: 10px solid transparent;    border-left: 10px solid transparent;    position: absolute;  top: -10px;  right: 68%;    z-index: 10;}
+.dropdown ul.dropdown-menu:after { content: "";  border-bottom: 12px solid #ccc; border-right: 12px solid transparent;    border-left: 12px solid transparent;    position: absolute;    top: -12px;  right: 68%;  z-index: 9;}
 .navbar {min-height: 50px;    margin-bottom: -1px;}
 .header-bottom { /*background: linear-gradient(to right, #0064ac, #008aa8);*/  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);    margin-top: 18px;}
 .gradient{background-image: linear-gradient(88deg, #ab9459, #f4e8b3); /*box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);*/}
 .menu li a {  font-family: 'Lato', sans-serif;    font-size: 14px;    text-align: left;    color: #ffffff; padding-top:13px; padding-bottom:13px;}
 .menu .active a{ font-weight:bold;}
 .footermenu{ width: 55%;  margin: 0 auto;   text-align: center;    float: none;}
-.footermenu li a {  font-family: 'Lato', sans-serif;    font-size: 12px; color: #ffffff;}
+.footermenu li a {  font-family: 'Lato', sans-serif;    font-size: 12px;    font-weight: bold;   color: #ffffff;}
 .menu>li>a:focus, .menu>li>a:hover {  text-decoration: none;}
 .menu>li>a:active,{   border-bottom: solid 4px #ffffff;}
 .footermenu>li>a:focus, .footermenu>li>a:hover {   text-decoration: none;    background-color: #ab9459 !important;}
@@ -123,7 +118,7 @@ footer { background: linear-gradient(to right, #0064ac, #008aa8);}
 .panel-tabs > li {float: left;    margin-bottom: 0px;    padding-bottom: 3px;    padding-top: 7px; font-size:16px; text-transform: uppercase;}
 .box-net .net_pos_tabs > li{ text-transform:capitalize;}
 .panel-tabs > .active > a{ font-weight:bold;}
-.panel-tabs > li > a {    margin-top: 4px;    line-height: 1.1;  border: 1px solid transparent;    border-radius: 4px 4px 0 0;    color: #ffffff;}
+.panel-tabs > li > a {    margin-top: 4px;    line-height: .85;  border: 1px solid transparent;    border-radius: 4px 4px 0 0;    color: #ffffff;}
 .yes-fortune > li > a{ margin:0px;     padding: 0px 20px;}
 .yes-fortune > li{    padding: 6px 0px 15px;}
 
@@ -196,8 +191,8 @@ footer { background: linear-gradient(to right, #0064ac, #008aa8);}
 .recommandations_sec .yes-fortune li a{ color:#808080; font-weight:normal;}
 .recommandations_sec .yes-fortune .active a{ color:#232323;}
 .recommandations_sec .table{}
-.recommandations_sec .table th{ text-align:center;    /* padding: 8px 10px 8px 10px !important;*/ line-height:17px;}
-.recommandations_sec .table td{ text-align:center;    /* padding: 8px 10px 8px 10px !important;*/}
+.recommandations_sec .table th{ text-align:center;     padding: 8px 10px 8px 10px !important; line-height:17px;}
+.recommandations_sec .table td{ text-align:center;     padding: 8px 10px 8px 10px !important;}
 .yes-fortune > li > a:hover {  border-color: transparent;    color: #000;   background-color: #fff;}
 .shape { padding-left: 16px;}
 .yes-fortune {  position: relative;  border-bottom:1px solid #979797;}
@@ -216,12 +211,11 @@ footer { background: linear-gradient(to right, #0064ac, #008aa8);}
 .news-para {    font-size: 14px;    color: #0062a9;    padding-top: 5px;    padding-bottom: 19px;    margin-bottom: 0;}
 .mtop {    margin-top: 20px;}
 .sell {    font-size: 16px;    font-weight: bold;    color: #fff;}
-.active > a, .dropdown:hover > a{  border-bottom: solid 4px #ffffff !important;    /*font-weight: bold;*/}
+.active {  border-bottom: solid 4px #ffffff;    /*font-weight: bold;*/}
 .drop {  float: right; cursor:pointer;}
 .drop .dropdown_menu{ padding-right:10px;}
 .logout_menu .icon-ys-menu-dots:before{ color:#ccc; padding-left:10px;}
 .profile_dropdown_sec{ display:inline-block; position:relative; top:10px;}
-.profile_dropdown_sec .dropdown-menu{ right:0px; left:auto;}
 .dd { position: relative;   padding: 16px 10px 35px 17px;    color: #FFF;    border-top-left-radius: 4px;    border-top-right-radius: 4px;   /* background-color: #b2dfed;*/ background-color:#b3b3b3;}
 h1 {  margin: 0;    padding: 0;    float: left;    font-size: 26px;}
 small {  font-size: 14px;    color: #666;    font-weight: normal;}
@@ -248,7 +242,7 @@ svg circle {   fill: #626262;}
 .buy_sell_hd{ padding-left:10px; vertical-align:middle;}
 .buy_sell_view_more a{}
 .health_score_picks_table{}
-.heaalth_score{ background:url(../images/health_score.png) no-repeat; width:50px; height:25px; margin:0 auto; padding-top:8px; vertical-align:middle; color:#2ebf44; font-size:14px; text-align:center;}
+.heaalth_score{ background:url(../images/health_score.png) no-repeat; width:50px; height:25px; margin:0 auto; padding-top:8px; vertical-align:middle; color:#2ebf44; font-size:14px;}
 
 
 .watchlist_sec .panel-tabs > li > a{color:#808080; padding:0px;}
@@ -289,10 +283,8 @@ svg circle {   fill: #626262;}
 .short_term_tabs ul li{ list-style:none; display:inline-block; font-size:14px; color:#808080; padding:0px 3px;}
 .short_term_tabs ul li a{ color:#808080; padding:0px;}
 
-.recommandations_sec .fortune_mob_scroll .table .trend_sec{ /*padding:0px !important;*/ width:100%; background:#fff;}
+.recommandations_sec .fortune_mob_scroll .table .trend_sec{ padding:0px !important; width:100%; background:#fff;}
 .recommandations_sec .fortune_mob_scroll .table td .close{ border:none; background:none;}
-.model_port_score{ padding-right:60px;}
-.model_port_score .heaalth_score{ color:#fff;}
 
 
 .rec_list_sec{}
@@ -307,33 +299,16 @@ svg circle {   fill: #626262;}
 .tooltip-inner{ min-width:auto; font-size:12px;}
 
 
-/*Mega menu css*/
-.header-bottom #myNavbar .nav .open>a, .header-bottom #myNavbar .nav .open>a:focus, .header-bottom #myNavbar .nav .open>a:hover {background: none !important;	border: none;}
-.header-bottom .dropdown ul.dropdown-menu {border-radius: 0px;	margin-top: 0px;}
-.header-bottom .mega-dropdown {position: static !important; border-top: none;}
-.header-bottom .mega-dropdown-menu {padding: 20px 0px;	width: 100%;	box-shadow: none;	-webkit-box-shadow: none;}
-.header-bottom .mega-dropdown-menu > li > ul {padding: 0;	margin: 0;}
-.header-bottom .mega-dropdown-menu > li > ul > li {list-style: none;}
-.header-bottom .mega-dropdown-menu > li > ul > li > a {display: block;	color: #222;	padding: 10px 5px; font-weight:normal;}
-.header-bottom .mega-dropdown-menu > li > ul > .dropdown-header a{ font-weight:bold;} 
-.header-bottom .mega-dropdown-menu > li ul > li > a:hover, .header-bottom .mega-dropdown-menu > li ul > li > a:focus {text-decoration: none;}
-.mega-dropdown-menu .dropdown-header a {color: #ff3546;}
-.header-bottom .mega-dropdown-menu .dropdown-header {font-size: 18px;	color: #ff3546;	padding: 0px;	line-height: 30px;}
-.header-bottom .carousel-control {	width: 30px;	height: 30px; top: -35px;}
-.header-bottom .left.carousel-control {right: 30px;	left: inherit;}
-.header-bottom .carousel-control .glyphicon-chevron-left, .header-bottom .carousel-control .glyphicon-chevron-right {	font-size: 12px;	background-color: #fff;	line-height: 30px;
-	text-shadow: none;	color: #333;	border: 1px solid #ddd;}
-
 /*Research_advisory css*/
 .stock_tabs_outer{}
 .stock_tabs_outer .brd_bottom{    position: relative;  left: 0px; padding:15px 0 0px 0; border-bottom: 1px solid #979797; width: 100%;}
 .model_view_more{text-align: right; padding: 0px 20px 10px;}
 .model_view_more a{ text-align:right; padding:0px 0px 10px; color:#0062a9; font-size:16px;}
-.portfolio_table .table thead th{ font-size:16px; font-weight:bold; /*padding:15px 17px;*/ border:none; height:54px; vertical-align:middle;}
-.portfolio_table .table tbody td{ font-size:14px; color:#232323; /*padding:15px 17px !important;*/ height:54px;border:none;}
+.portfolio_table .table thead th{ font-size:16px; font-weight:bold; padding:15px 17px; border:none;}
+.portfolio_table .table tbody td{ font-size:14px; color:#232323; padding:15px 17px !important;border:none;}
 .buy-sel .portfolio_hd{ padding:16px 10px 10px 17px;}
 .helath_score_outer_sec{ padding-top:25px;}
-.helath_score_outer_sec .health_score{font-size:36px; color:#626262; text-align:center;}
+.helath_score_outer_sec .health_score{font-size:30px; color:#626262; text-align:center;}
 .helath_score_outer_sec .health_score_cont{ font-size:14px; color:#626262; text-align:center;}
 .portfolio_trades_bg{ background:#f7f7f7; padding:20px;}
 .portfolio_cont{ font-size:16px; color:#232323; text-align:center;}
@@ -348,10 +323,10 @@ svg circle {   fill: #626262;}
 .center_sec{ border-left:1px solid #b3b3b3; border-right:1px solid #b3b3b3;}
 .sell_stocks_sec{padding: 20px 10px 20px 10px}
 .stocks_view_more_btn{ text-align:right; font-size:16px; padding:15px 20px 15px 0; background:#f7f7f7;}
-.portfolio_health_score{ padding:20px 20px 14px 20px;}
+.portfolio_health_score{ padding:20px;}
 .portfolio_health_score_img{ display:inline-block;}
 .recom_table .table .text-left{ text-align:left;}
-.recom_table .table th,.recom_table .table td{ /*padding:8px 20px 8px 20px !important;*/} 
+.recom_table .table th,.recom_table .table td{ padding:8px 20px 8px 20px !important;} 
 .recom_table .shwmore{ padding:0px; text-align:center; float:none; padding:20px 0px;}
 .research_report_sec{ padding:20px;}
 .research_report_sec .res_report_column{ width:20%; float:left; padding-right:10px; padding-left:15px;}
@@ -364,8 +339,7 @@ svg circle {   fill: #626262;}
 
 
 /*Quotes page css start*/
-
-.rec_icon .icon-ys-recommendations:before{ color:#000;}
+.breadcrumb_sec{}
 .breadcrumb_sec .main_menu{ font-size:14px; color:#626262;}
 .quotes_sec .panel-tabs > li{ font-size:14px; text-transform:capitalize;    padding-bottom: 5px;  padding-top: 7px;}
 .quotes_sec .panel{ border:none;}
@@ -387,17 +361,10 @@ svg circle {   fill: #626262;}
 .watchlist_table .watchlist_buttons_sec li{ padding:0px 4px;  margin-right:0px;}
 .watchlist_table .table td .watchlist_buttons_sec li a{ padding:2px 10px;}
 .watchlist_buttons_sec .buy_btn{border-radius:4px; color:#2ebf44; text-align:center; display:inline-block; margin-right:5px; padding:0px;}
-.watchlist_buttons_sec .buy_btn a{ color:#2ebf44; padding:1px 10px; font-size:16px;  border:1px solid #2ebf44; font-weight:normal;}
+.watchlist_buttons_sec .buy_btn a{ color:#2ebf44; padding:1px 10px; font-size:16px;  border:1px solid #2ebf44;}
 .watchlist_buttons_sec .sell_btn{border-radius:4px;  color:#2ebf44; text-align:center; display:inline-block; padding:0px; margin-right:5px;}
-.watchlist_buttons_sec .sell_btn a{ color:#d71920; padding:1px 10px; font-size:16px; border:1px solid #d71920; font-weight:normal;}
+.watchlist_buttons_sec .sell_btn a{ color:#d71920; padding:1px 10px; font-size:16px; border:1px solid #d71920;}
 .watchlist_buttons_sec .yf_btn{border-radius:4px; border:1px solid #0062a9; color:#2ebf44; text-align:center; display:inline-block; margin-right:5px; padding:0px;}
-
-.alternate_sug_sec .suggest_shares table td{ border-top:1px solid #ccc; height:55px;}
-.alternate_sug_sec .suggest_shares table .trend_sec{     position: absolute;  z-index: 1;   background: #fff;    width: 90%;    height: 56px;    margin: 0 auto;    text-align: center; left:16px; }
-.alternate_sug_sec .suggest_shares table .trend_sec>div{ padding-top:5px;}
-
-
-
 
 .watchlist_buttons_sec .yf_btn a{ color:#0062a9; padding:1px 10px; font-size:16px;}
 .watchlist_buttons_sec .search_btn{border-radius:4px; color:#626262; text-align:center; display:inline-block; margin-right:5px; padding:0px;}
@@ -407,7 +374,7 @@ svg circle {   fill: #626262;}
 .watchlist_buttons_sec .graph_btn a{ color:#626262; padding:1px 10px; font-size:16px;  border:1px solid #626262; padding:0px 16px 4px 16px !important;}
 .watchlist_buttons_sec .watchlist_icon .icon-ys-watchlist:before{ color:#626262;}
 .watchlist_buttons_sec .watchlist_icon:hover .icon-ys-watchlist:before{ color:#fff;}
-.trend_sec{border-top:1px solid #eee !important; border-bottom:1px solid #eee !important; background:#fff;}
+.trend_sec{border-top:1px solid #eee !important; border-bottom:1px solid #eee !important;}
 .watchlist_table .watchlist_buttons_sec li:nth-child(5n) a{ padding:0px 5px 0 0 !important;}
 
 
@@ -449,8 +416,8 @@ svg circle {   fill: #626262;}
 .graph_ratings ul li:first-child{color:#d71920;}
 .graph_ratings ul li:nth-child(2n){ color:#626262;}
 .graph_ratings ul li:last-child{ color: #2ebf44;}
-.trade_value .pulse_btn{ color:#0062a9; font-size:16px; background:#b2dfed; border-radius:2px; display:inline-block; padding:3px 15px;}
-.trade_value .pulse_cont{display:inline-block; font-size:14px; color:#808080; line-height:28px;}
+.trade_value .pulse_btn{ color:#0062a9; font-size:16px; background:#b2dfed; border-radius:2px; display:inline-block; padding:3px 15px; margin-right:15px;}
+.trade_value .pulse_cont{display:inline-block; font-size:14px; color:#808080;}
 .alternate_sug_hd{ font-size:14px; color:#808080; padding-bottom:10px;}
 .suggest_shares ul{ padding:0px; margin:0px;}
 .suggest_shares ul li{ list-style:none; border-bottom:1px solid #ccc; padding:10px 0px 10px;}
@@ -474,7 +441,6 @@ svg circle {   fill: #626262;}
 .overive_view_more_btn{ text-align:right; font-size:16px; color:#0062a9;}
 .overive_view_more_btn a{color:#0062a9; text-decoration:none;}
 .overview_table th, td{ padding:8px !important; width:auto;}
-.rec_table .trend_sec{ padding:0px !important;}
 .yes_recom{}
 .yes_recom .yes_recm_hd{}
 .yes_fortune_logo{ padding-left:10px; padding-right:20px;}
@@ -489,7 +455,7 @@ svg circle {   fill: #626262;}
 .report_sec .report_time{ font-size:12px; color:#838383; padding-top:10px;}
 .report_link{ font-size:14px; color:#0062a9; padding-bottom:20px; padding-top:10px;}
 .report_bottom_brd{border-bottom:1px solid #ececec;}
-.yes_recm_sec .col-sm-4{ padding:0px 18px;}
+.yes_recm_sec .col-sm-4{ padding:0px 25px;}
 .recom_view_more{ text-align:right; font-size:16px;}
 .recom_view_more a{ color:#0062a9;}
 .reco_date { font-size:12px; color:#888888;}
@@ -551,10 +517,21 @@ svg circle {   fill: #626262;}
 .alert_not_tab .nav-tabs li a{ background:none; color:#808080; margin:0; border:none; padding:0px 10px;}
 .alert_not_tab .nav-tabs li a:hover{ background:none; color:#000; border:none; margin:0px;}
 .alert_not_tab .nav-tabs .active a{ background:none; border:none; color:#232323;}
-.symbol_hd{ color:#0062a9; font-size:14px;}
+.symbol_hd{ color:#0062a9; font-size:14px; cursor: pointer;}
 .stock_table .net-position th, .stock_table .net-position td{ width:auto;}
 .stock_table .buy_btn a {  color: #2ebf44;  padding: 1px 10px;    font-size: 16px;    border: 1px solid #2ebf44;}
 .stock_table .sell_btn a { color: #d71920;  padding: 1px 10px;    font-size: 16px;    border: 1px solid #d71920;}
+td.health-score { background: url("../images/health-meter.png") no-repeat; background-position: center; color:#2ebf44; text-align: center; vertical-align: bottom !important; }
+.health-score { background: url("../images/health-meter.png") no-repeat; background-position: center; color:#2ebf44; text-align: center; vertical-align: bottom !important; padding-top: 15px;}
+.hide-overflow-x { overflow-x: auto; }
+.sticky-header {top: 0; z-index: 100; position: fixed; width: 100%; background: #FFFFFF; padding: 10px 0; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);}
+
+/*#collapseStocks .net-position tr:nth-child(even) {background-color: #ffffff;} */
+/*#collapseStocks .net-position tr:nth-child(odd) {background-color: #f6f6f6;} */
+
+#headingStocks .form-group {padding-top: 10px;}
+#headingStocks select.form-control {border: none; box-shadow: none; border-bottom: 1px solid #979797; color:#232323;   border-radius: 0; padding:0px; height:20px;  -moz-appearance: none;  -webkit-appearance: none;   appearance: none;  background-image: url(../images/select_list_arrow.png);   background-repeat: no-repeat;  background-size: 9px;   background-position: right 10px; width: auto; min-width: 100px;}
+
 
 /*Buy Form Css*/
 .buy_form .modal { margin-bottom:60px;}
@@ -710,9 +687,6 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
 }
   
  @media screen and (min-width: 320px) and (max-width: 480px) {
-.header-bottom{ background:none;}	
-.header-bottom .menu li a{ color:#232323;} 
-/*.header-bottom .menu .active a{ background:#eee;}*/
 .as0{ padding:0px !important;}	 
 .slider .flexslider{ background:#fff; padding:20px 0;}	
 .container { width: 100%;  }
@@ -782,6 +756,14 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
 .recommandations_sec .outer {position: relative}
 .recommandations_sec .inner {overflow-x: auto;	overflow-y: visible;	margin-left: 120px;}
 
+#collapseStocks .outer .inner table { table-layout: inherit; margin-left:-80px; /*margin-left: -100px;/*ie7*/}
+#collapseStocks .outer .inner table { margin-left:0px; }
+#collapseStocks .outer .inner table td, th {  vertical-align: top;	padding: 10px;	min-width: 100px;}
+#collapseStocks .outer .inner table tr td:first-child, #collapseStocks .outer .inner table tr th:first-child {	position: absolute; /*position: relative; /*ie7*/	left: 0;width: 142px; height:56px !important;}
+#collapseStocks .outer .inner table tr.stock_expand td { position: relative; }
+#collapseStocks .outer .inner table tr th:first-child { background-color: #f7f7f7; }
+#collapseStocks .outer {position: relative}
+#collapseStocks .outer .inner {overflow-x: auto;	overflow-y: visible;	margin-left: 140px;}
 
 /*Insights & Trends*/
 .insight{ font-size:14px;}
@@ -823,17 +805,15 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
 .mob_pdb10{ padding-bottom:10px;}
 .mob_pdb20{ padding-bottom:20px;}
 .mob_pd0{ padding:0px;}
+.mob-pds15 {padding-right: 15px; padding-left: 15px;}
 
 
 /*Quotes css start*/
-.trade_value .pulse_cont{ font-size:12px; line-height:16px; padding:0px 8px;}
-.trade_value .pulse_btn{padding: 15px 10px; background:#626262; color:#fff; border-radius:4px; font-weight:300; text-align:center;}
-.trade_value{ border-top:1px solid #ccc; border-bottom:1px solid #ccc; padding:10px 0px;}
 .graph_ratings{ text-align:center; margin:0 auto;}
 .nse_bse_main_tabs{ text-align:center;}
 .share_actual_value{ font-size:14px;}
 .buttons_sec{ text-align:center;     top: 0px;  padding: 20px 0;}
-.graph_ratings ul li{ text-align:center; line-height:15px; margin-right:3px; font-size:12px;}
+.graph_ratings ul li{ text-align:center; line-height:15px; margin-right:5px;}
 .share_name_sec .share_sub_title{ padding-bottom:5px;}
 .share_buy_sell_sec {  padding: 20px 15px 15px 15px;}
 .price_mov_days ul li{ margin:10px 4px 0 0px;}
@@ -842,7 +822,6 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
 .yes_recm_sec .col-sm-4 {padding: 0px 5px;}
 .rel_res_report{ padding-top:20px;}
 .yes_recm_sec .overview_brd{ border:none;}
-
 
 /*Portfolio css start*/
 .my_networth_hd, .my_networth_score{ text-align:center;}
