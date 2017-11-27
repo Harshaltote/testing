@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Trader - Quotes</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-style.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<!--Header section start-->
+<header class="ts0">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 col-xs-7"> <img class="img-responsive logo" src="images/logo.png"> </div>
+      <div class="hidden-xs sensx">
+        <div class="col-sm-6">
+          <div class="col-sm-4"> <span class="s0">SENSEX</span> <br>
+            <span class="n0">31,960</span> <span class="n1">+125.6</span> </div>
+          <div class="col-sm-4"> <span class="s0">NIFTY</span> <br>
+            <span class="n0">9730</span> <span class="n1">+25.6</span> </div>
+          <div class="col-sm-4"> <span class="s0">$ - <span class="icon-ys-rupee font12"> </span></span> <br>
+            <span class="n0">65.05</span> <span class="n1">+0.05</span> </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-xs-5">
+        <div class="right">
+          <div class="search_icon visible-xs"><img src="images/search_icon.png"></div>
+          <div class="icon-wrapper"> <span class="icon-ys-notification font28"></span> <span class="badge">2</span> </div>
+          <ul class="nav navbar-nav">
+            <li class="dropdown"> <a href="#" class="dropdown-toggle as0" data-toggle="dropdown"><span class="hidden-xs">LOGOUT</span> 
+              <!--i class="fa fa-ellipsis-v pdl5" aria-hidden="true"></i--> </a> </li>
+          </ul>
+          <div class="profile_dropdown_sec"> <span type="button" class="logout_menu" id="menu3" data-toggle="dropdown"><span class="icon-ys-menu-dots"></span></span>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="menu3">
+              <li role="presentation"><a href="#">Profile</a></li>
+              <li role="presentation"><a href="#">Preferences</a></li>
+              <li role="presentation"><a href="#">Charges</a></li>
+              <li role="presentation"><a href="#">DP</a></li>
+              <li role="presentation"><a href="#">Dealer Details</a></li>
+              <li role="presentation"><a href="#">Brokerage &amp; VAS</a></li>
+              <li role="presentation"><a href="#">VSP &amp; SVSP</a></li>
+              <li role="presentation"><a href="#">Brokerage Plan</a></li>
+              <li role="presentation"><a href="#">Settings</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-bottom gradient">
+    <div class="container">
+      <div class="row">
+        <nav class="col-sm-12">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav menu">
+              <li><a href="index.html">Dashboard</a> </li>
+              <li><a href="#">Buy / Sell</a> </li>
+              <li><a href="#">Track / Manage</a> </li>
+              <li  class="active"><a href="test.html">Markets</a> </li>
+              <li><a href="#">Research &amp; Recommendations</a> </li>
+              <li><a href="#">Reports</a> </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<!--Header section end--> 
+
+<!--Maincontainer section start-->
+<section class="bg">
+  <div class="container">
+    <div class="row">
+      <div class="mrt20">
+        <div class="col-sm-12">
+          <div class="breadcrumb_sec"> <span class="main_menu">Markets > <span class="sub_menu">Infosys (NSE)</span></span> </div>
+          <div class="mrt20">
+            <div class="panel mr0">
+              <div class="share_buy_sell_sec">
+                <div class="share_outer">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <div class="nse_bse_main_tabs">
+                        <ul>
+                          <li class="sel"><a href="#">NSE</a></li>
+                          <li>|</li>
+                          <li><a href="#">BSE</a></li>
+                          <li>|</li>
+                          <li><a href="#">F&amp;O</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-6 col-xs-6 pdl0">
+                        <div class="shares_sec">
+                          <div class="col-sm-6 pd0">
+                            <div class="share_name_sec">
+                              <div class="share_name">Infosys</div>
+                              <div class="share_sub_title">Computers - Software</div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 mob_pd0">
+                            <div class="share_value_sec">
+                              <div class="share_actual_value">936.50</div>
+                              <div class="share_profit_loss">+13.75 (0.97%)</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-xs-6 mob_pd0">
+                        <div class="graph_sec">
+                          <div class="graph_img"><img src="images/shares_graph.png"  class="img-responsive"></div>
+                          <div class="graph_ratings">
+                            <ul>
+                              <li>Strong <br class="visible-xs"/>
+                                Sell</li>
+                              <li>Health <br class="visible-xs"/>
+                                Score</li>
+                              <li>Strong <br class="visible-xs"/>
+                                Buy</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clear">
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <div class="buttons_sec watchlist_buttons_sec">
+                              <div class="buy_btn"><a class="btn btn-default" href="#">BUY</a></div>
+                              <div class="sell_btn"><a class="btn btn-default" href="#">SELL</a></div>
+                              <div class="watchlist_btn"><a class="btn btn-default" href="#">+ WATCHLIST</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="alternate_sug_sec">
+                        <div class="alternate_sug_hd">Alternate suggestions</div>
+                        <div class="suggest_shares">
+                          <table class="table" width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td><div class="sug_share_name">TCS</div></td>
+                              <td><div class="sug_share_value">2,581.20 (+0.88%)</div></td>
+                              <td><div class="heaalth_score">70</div></td>
+                              <td colspan="3" class="trend_sec"><div>
+                                  <ul class="watchlist_buttons_sec">
+                                    <li class="buy_btn"><a href="#" class="btn btn-default" data-toggle="modal" data-target="#buyModal">BUY</a></li>
+                                    <li class="sell_btn"><a href="#" class="btn btn-default" data-toggle="modal" data-target="#sellModal">SELL</a></li>
+                                    <!--li class="yf_btn"><a href="#" class="btn btn-default">YF</a></li-->
+                                    <li class="graph_btn"><a href="#" class="btn btn-default"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Graph"><span class="icon-ys-graph01 font16"></span></a></li>
+                                    <li class="search_btn"><a href="#" class="btn btn-default"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Quote">Q</a></li>
+                                  </ul>
+                                </div></td>
+                            </tr>
+                            <tr>
+                              <td><div class="sug_share_name">Wipro</div></td>
+                              <td><div class="sug_share_value">291.40 (+0.20%)</div></td>
+                              <td><div class="heaalth_score">70</div></td>
+                              <td colspan="3" class="trend_sec"><div>
+                                  <ul class="watchlist_buttons_sec">
+                                    <li class="buy_btn"><a href="#" class="btn btn-default" data-toggle="modal" data-target="#buyModal">BUY</a></li>
+                                    <li class="sell_btn"><a href="#" class="btn btn-default" data-toggle="modal" data-target="#sellModal">SELL</a></li>
+                                    <!--li class="yf_btn"><a href="#" class="btn btn-default">YF</a></li-->
+                                    <li class="graph_btn"><a href="#" class="btn btn-default"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Graph"><span class="icon-ys-graph01 font16"></span></a></li>
+                                    <li class="search_btn"><a href="#" class="btn btn-default"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Quote">Q</a></li>
+                                  </ul>
+                                </div></td>
+                            </tr>
+                            <tr>
+                              <td><div class="sug_share_name">HCL Tech</div></td>
+                              <td><div class="sug_share_value">925.50 (+0.16%)</div></td>
+                              <td><div class="heaalth_score">70</div></td>
+                              <td colspan="3" class="trend_sec"><div>
+                                  <ul class="watchlist_buttons_sec">
+                                    <li class="buy_btn"><a href="#" class="btn btn-default" data-toggle="modal" data-target="#buyModal">BUY</a></li>
+                                    <li class="sell_btn"><a href="#" class="btn btn-default" data-toggle="modal" data-target="#sellModal">SELL</a></li>
+                                    <!--li class="yf_btn"><a href="#" class="btn btn-default">YF</a></li-->
+                                    <li class="graph_btn"><a href="#" class="btn btn-default"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Graph"><span class="icon-ys-graph01 font16"></span></a></li>
+                                    <li class="search_btn"><a href="#" class="btn btn-default"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Quote">Q</a></li>
+                                  </ul>
+                                </div></td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="trade_value">
+                        <div class="pulse_btn col-sm-1 col-xs-3">PULSE</div>
+                        <div class="pulse_cont col-sm-11 col-xs-9">Based on 2% of 5 day average traded Value the stock is liquid enough for trade size of Rs 5.74 cr</div>
+                        <div class="clear"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="col-sm-12">
+        <div class="quotes_sec mrt20">
+          <div class="panel panel-primary">
+            <div class="panel-heading gradient"> 
+              
+              <!-- Tabs -->
+              <ul class="nav panel-tabs">
+                <li class="active"><a href="#overview" data-toggle="tab" aria-expanded="true">Overview</a> </li>
+                <li class=""><a href="#yes_fortune" data-toggle="tab" aria-expanded="false">YES <sup>Fortune</sup></a> </li>
+                <li class=""><a href="#charts" data-toggle="tab" aria-expanded="false">Charts</a> </li>
+                <li class=""><a href="#Financials" data-toggle="tab" aria-expanded="false">Financials</a> </li>
+                <li class=""><a href="#company_info" data-toggle="tab" aria-expanded="false">Company Info</a> </li>
+                <li class=""><a href="#competitors" data-toggle="tab" aria-expanded="false">Competitors</a> </li>
+                <li class=""><a href="#corporate_announcements" data-toggle="tab" aria-expanded="false">Corporate Announcements </a> </li>
+                <li class=""><a href="#news" data-toggle="tab" aria-expanded="false">News</a> </li>
+              </ul>
+            </div>
+            <div class="share_buy_sell_sec">
+              <div class="quotes_sec_tabs">
+                <div class="tab-content">
+                  <div class="tab-pane active" id="overview">
+                    <div class="overview_main_sec">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="overview_table">
+                            <div class="table-responsive">
+                              <table class="table">
+                                <tr>
+                                  <td><div class="floating_name">Previous Close</div>
+                                    <div class="over_value">935.6</div></td>
+                                  <td><div class="floating_name">Open</div>
+                                    <div class="over_value">936.00</div></td>
+                                  <td><div class="floating_name">High</div>
+                                    <div class="over_value">31,960</div></td>
+                                  <td><div class="floating_name">Low</div>
+                                    <div class="over_value">31,960</div></td>
+                                </tr>
+                                <tr>
+                                  <td><div class="floating_name">Bid Price</div>
+                                    <div class="over_value">930.60 </div></td>
+                                  <td><div class="floating_name">Bid Qty</div>
+                                    <div class="over_value">84</div></td>
+                                  <td><div class="floating_name">Offer Price</div>
+                                    <div class="over_value">930.60 </div></td>
+                                  <td><div class="floating_name">Offer Qty</div>
+                                    <div class="over_value">98</div></td>
+                                </tr>
+                                <tr>
+                                  <td><div class="floating_name">Lower Ckt Limit</div>
+                                    <div class="over_value">841.95 </div></td>
+                                  <td><div class="floating_name">Upper Ckt Limit</div>
+                                    <div class="over_value">1,028.95 </div></td>
+                                  <td><div class="floating_name">52 Wk High</div>
+                                    <div class="over_value">1,082.70 </div></td>
+                                  <td><div class="floating_name">52 Wk Low</div>
+                                    <div class="over_value">860.00 </div></td>
+                                </tr>
+                                <tr>
+                                  <td><div class="floating_name">Avg Volume</div>
+                                    <div class="over_value">46,35,835 </div></td>
+                                  <td><div class="floating_name">Market Cap (in Cr.)</div>
+                                    <div class="over_value">2,14,872 </div></td>
+                                  <td><div class="floating_name">P/E</div>
+                                    <div class="over_value">15.00 </div></td>
+                                  <td><div class="floating_name">Industry P/E</div>
+                                    <div class="over_value">16.00 </div></td>
+                                </tr>
+                                <tr>
+                                  <td><div class="floating_name">EPS</div>
+                                    <div class="over_value">62.69 </div></td>
+                                  <td><div class="floating_name">Book Vlaue</div>
+                                    <div class="over_value">300.34 </div></td>
+                                  <td><div class="floating_name">Price/Book</div>
+                                    <div class="over_value">3.10</div></td>
+                                  <td><div class="floating_name">Dividend &amp; Yield (%)</div>
+                                    <div class="over_value">1515.00% &amp; 2.77%</div></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="overeview_graph">
+                            <div class="price_mov_nse"><img src="images/price_movement_nse.png" class="img-responsive"></div>
+                            <div class="price_mov_sec">
+                              <div class="price_mov_hd">Price movement in NSE for </div>
+                              <div class="price_mov_days">
+                                <ul>
+                                  <li class="sel"><a href="#">Today</a></li>
+                                  <li><a href="#">5D</a></li>
+                                  <li><a href="#">1M</a></li>
+                                  <li><a href="#">3M</a></li>
+                                  <li><a href="#">1Y</a></li>
+                                  <li><a href="#">Max</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="overive_view_more_btn mrt20"><a href="#">View more <span class="icon-next-arrow font12"></span></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="recommandations_sec01">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="yes_recom">
+                      <div class="yes_recm_hd"><span class="rec_icon"><span class="icon-ys-recommendations font18"></span></span><span class="yes_fortune_logo"><img src="images/overview_yes_fortune.png"></span><span class="recm_hd">Recommendations</span></div>
+                      <div class="yes_recm_sec">
+                        <div class="col-sm-4">
+                          <div class="sell_sec">
+                            <div class="sell_hd">SELL</div>
+                            <div class="sell_cont">Yes Fortune recommends you to sell since consectetur adipiscing elit. Aenean  erin euismod bibendum laoreet jaborang. </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4 overview_brd">
+                          <div class="over_rec">
+                            <div class="alternate_sug_sec">
+                              <div class="alternate_sug_hd">Alternate suggestions </div>
+                              <div class="suggest_shares">
+                                <table class="table" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                  <tr>
+                                    <td><div class="sug_share_name">TCS</div></td>
+                                    <td><div class="sug_share_value">2,581.20 (+0.88%)</div></td>
+                                    <td><div class="heaalth_score">70</div></td>
+                                    <td colspan="3" class="trend_sec"><div>
+                                        <ul class="watchlist_buttons_sec">
+                                          <li class="buy_btn"><a href="#" class="btn btn-default" data-toggle="modal" data-target="#buyModal">BUY</a></li>
+                                          <li class="sell_btn"><a href="#" class="btn btn-default" data-toggle="modal" data-target="#sellModal">SELL</a></li>
+                                          <!--li class="yf_btn"><a href="#" class="btn btn-default">YF</a></li-->
+                                          <li class="graph_btn"><a href="#" class="btn btn-default"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Graph"><span class="icon-ys-graph01 font16"></span></a></li>
+                                          <li class="search_btn"><a href="#" class="btn btn-default"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Quote">Q</a></li>
+                                        </ul>
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td><div class="sug_share_name">Wipro</div></td>
+                                    <td><div class="sug_share_value">291.40 (+0.20%)</div></td>
+                                    <td><div class="heaalth_score">70</div></td>
+                                    <td colspan="3" class="trend_sec"><div>
+                                        <ul class="watchlist_buttons_sec">
+                                          <li class="buy_btn"><a href="#" class="btn btn-default" data-toggle="modal" data-target="#buyModal">BUY</a></li>
+                                          <li class="sell_btn"><a href="#" class="btn btn-default" data-toggle="modal" data-target="#sellModal">SELL</a></li>
+                                          <!--li class="yf_btn"><a href="#" class="btn btn-default">YF</a></li-->
+                                          <li class="graph_btn"><a href="#" class="btn btn-default"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Graph"><span class="icon-ys-graph01 font16"></span></a></li>
+                                          <li class="search_btn"><a href="#" class="btn btn-default"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Quote">Q</a></li>
+                                        </ul>
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td><div class="sug_share_name">HCL Tech</div></td>
+                                    <td><div class="sug_share_value">925.50 (+0.16%)</div></td>
+                                    <td><div class="heaalth_score">70</div></td>
+                                    <td colspan="3" class="trend_sec"><div>
+                                        <ul class="watchlist_buttons_sec">
+                                          <li class="buy_btn"><a href="#" class="btn btn-default" data-toggle="modal" data-target="#buyModal">BUY</a></li>
+                                          <li class="sell_btn"><a href="#" class="btn btn-default" data-toggle="modal" data-target="#sellModal">SELL</a></li>
+                                          <!--li class="yf_btn"><a href="#" class="btn btn-default">YF</a></li-->
+                                          <li class="graph_btn"><a href="#" class="btn btn-default"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Graph"><span class="icon-ys-graph01 font16"></span></a></li>
+                                          <li class="search_btn"><a href="#" class="btn btn-default"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Quote">Q</a></li>
+                                        </ul>
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td><div class="sug_share_name">TCS</div></td>
+                                    <td><div class="sug_share_value">2,581.20 (+0.88%)</div></td>
+                                    <td><div class="heaalth_score">70</div></td>
+                                    <td colspan="3" class="trend_sec"><div>
+                                        <ul class="watchlist_buttons_sec">
+                                          <li class="buy_btn"><a href="#" class="btn btn-default" data-toggle="modal" data-target="#buyModal">BUY</a></li>
+                                          <li class="sell_btn"><a href="#" class="btn btn-default" data-toggle="modal" data-target="#sellModal">SELL</a></li>
+                                          <!--li class="yf_btn"><a href="#" class="btn btn-default">YF</a></li-->
+                                          <li class="graph_btn"><a href="#" class="btn btn-default"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Graph"><span class="icon-ys-graph01 font16"></span></a></li>
+                                          <li class="search_btn"><a href="#" class="btn btn-default"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Quote">Q</a></li>
+                                        </ul>
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td><div class="sug_share_name">Wipro</div></td>
+                                    <td><div class="sug_share_value">291.40 (+0.20%)</div></td>
+                                    <td><div class="heaalth_score">70</div></td>
+                                    <td colspan="3" class="trend_sec"><div>
+                                        <ul class="watchlist_buttons_sec">
+                                          <li class="buy_btn"><a href="#" class="btn btn-default" data-toggle="modal" data-target="#buyModal">BUY</a></li>
+                                          <li class="sell_btn"><a href="#" class="btn btn-default" data-toggle="modal" data-target="#sellModal">SELL</a></li>
+                                          <!--li class="yf_btn"><a href="#" class="btn btn-default">YF</a></li-->
+                                          <li class="graph_btn"><a href="#" class="btn btn-default"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Graph"><span class="icon-ys-graph01 font16"></span></a></li>
+                                          <li class="search_btn"><a href="#" class="btn btn-default"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Quote">Q</a></li>
+                                        </ul>
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td><div class="sug_share_name">HCL Tech</div></td>
+                                    <td><div class="sug_share_value">925.50 (+0.16%)</div></td>
+                                    <td><div class="heaalth_score">70</div></td>
+                                    <td colspan="3" class="trend_sec"><div>
+                                        <ul class="watchlist_buttons_sec">
+                                          <li class="buy_btn"><a href="#" class="btn btn-default" data-toggle="modal" data-target="#buyModal">BUY</a></li>
+                                          <li class="sell_btn"><a href="#" class="btn btn-default" data-toggle="modal" data-target="#sellModal">SELL</a></li>
+                                          <!--li class="yf_btn"><a href="#" class="btn btn-default">YF</a></li-->
+                                          <li class="graph_btn"><a href="#" class="btn btn-default"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Graph"><span class="icon-ys-graph01 font16"></span></a></li>
+                                          <li class="search_btn"><a href="#" class="btn btn-default"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Quote">Q</a></li>
+                                        </ul>
+                                      </div></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="rel_res_report">
+                            <div class="res_rel_rep_hd">Relevant Research Reports</div>
+                            <div class="report_sec report_bottom_brd">
+                              <div class="report_time">Today 2:00 PM</div>
+                              <div class="report_link "><strong>Sector:</strong> IT will take at least 4 to reach back to its past glory</div>
+                            </div>
+                            <div class="report_sec report_bottom_brd">
+                              <div class="report_time">Today 2:00 PM</div>
+                              <div class="report_link"><strong>Infosys:</strong> Infosys is past its prime</div>
+                            </div>
+                            <div class="report_sec">
+                              <div class="report_time">Today 2:00 PM</div>
+                              <div class="report_link"><strong>TV:</strong> Prashant's view on infosys. Watch Now.</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="recom_view_more"><a href="#">View more <span class="icon-next-arrow font12"></span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Maincontainer section end--> 
+
+<!--Footer section start-->
+<footer class="gradient hidden-xs">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <nav class="navbar">
+          <div class="container">
+            <ul class="nav navbar-nav footermenu">
+              <li><a href="#">User Guide</a> </li>
+              <li><a href="#">Feedback</a> </li>
+              <li><a href="#">FAQ</a> </li>
+              <li><a href="#">Social Media Tagging</a> </li>
+              <li><a href="#">Locate Us</a> </li>
+              <li><a href="#">Contact Us</a> </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--Footer section end--> 
+<!--Navigation code for mobile device start-->
+<div class="visible-xs">
+  <div class="hidden_ht"></div>
+  <div class="mob_nav_sec">
+    <ul>
+      <li class="sel"> <a href="#">
+        <div class="nav_outer_sec">
+          <div class="menu_icon"><img src="images/dashboard.png" ></div>
+          <div class="menu_hd">Dashboard</div>
+        </div>
+        </a> </li>
+      <li><a href="#">
+        <div class="nav_outer_sec">
+          <div class="menu_icon"><img src="images/portfolio.png" ></div>
+          <div class="menu_hd">Portfolio</div>
+        </div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="nav_outer_sec">
+          <div class="menu_icon"><img src="images/watchlist_ft.png" ></div>
+          <div class="menu_hd">Watchlist</div>
+        </div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="nav_outer_sec">
+          <div class="menu_icon"><img src="images/buy_sell.png" ></div>
+          <div class="menu_hd">Buy/Sell</div>
+        </div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="nav_outer_sec">
+          <div class="menu_icon"><img src="images/tradebook.png" ></div>
+          <div class="menu_hd">Tradebook</div>
+        </div>
+        </a> </li>
+    </ul>
+  </div>
+</div>
+<!--Navigation code for mobile device start--> 
+
+<script src="js/jquery.min.js"></script> 
+<script>
+$(document).ready(function(){
+	
+	$('.table tr').mouseenter(function() {
+		//$('.trend_sec').show('slow');
+		$('.trend_sec').hide();
+		$(this).children('.trend_sec').fadeIn('fast');
+	});
+	$('.table tr').mouseleave(function() {
+		//$('.trend_sec').show('slow');
+		$('.trend_sec').hide();
+	});
+	$('.close').click(function(){
+		//$('.trend_sec').hide('slow');
+		$(this).closest('tr').remove();
+		//$(this).children('.trend_sec').hide('slow');	
+	});
+	
+	    $('[data-toggle="tooltip"]').tooltip();
+	
+		
+})
+</script> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

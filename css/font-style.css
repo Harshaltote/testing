@@ -1,0 +1,164 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?lgkzux');
+  src:  url('../fonts/icomoon.eot?lgkzux#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?lgkzux') format('truetype'),
+    url('../fonts/icomoon.woff?lgkzux') format('woff'),
+    url('../fonts/icomoon.svg?lgkzux#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\e8b6";
+}
+.icon-ys-research-report:before {
+  content: "\e921";
+}
+.icon-ys-allocate-funds:before {
+  content: "\e900";
+  color: #fff;
+}
+.icon-ys-asset-allocation:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-ys-buysell:before {
+  content: "\e902";
+  color: #fff;
+}
+.icon-ys-currency:before {
+  content: "\e903";
+  color: #0062a9;
+}
+.icon-ys-dashboard:before {
+  content: "\e904";
+  color: #fff;
+}
+.icon-ys-delete:before {
+  content: "\e905";
+  color: #d71920;
+}
+.icon-ys-downarrow:before {
+  content: "\e906";
+  color: #0062a9;
+}
+.icon-ys-download:before {
+  content: "\e907";
+  color: #0062a9;
+}
+.icon-ys-edit:before {
+  content: "\e908";
+  color: #0062a9;
+}
+.icon-ys-enhance-portfolio:before {
+  content: "\e909";
+  color: #fff;
+}
+.icon-ys-equity:before {
+  content: "\e90a";
+  color: #0062a9;
+}
+.icon-ys-FNO:before {
+  content: "\e90b";
+  color: #0062a9;
+}
+.icon-ys-fullscreen:before {
+  content: "\e90c";
+  color: #0062a9;
+}
+.icon-ys-graph:before {
+  content: "\e90d";
+}
+.icon-ys-graph01:before {
+  content: "\e90e";
+  color: #626262;
+}
+.icon-ys-ipo:before {
+  content: "\e90f";
+  color: #0062a9;
+}
+.icon-ys-leftarrow:before {
+  content: "\e910";
+  color: #9b9b9b;
+}
+.icon-ys-menu-dots:before {
+  content: "\e911";
+  color: #fff;
+}
+.icon-ys-MFS:before {
+  content: "\e912";
+  color: #0062a9;
+}
+.icon-ys-news:before {
+  content: "\e913";
+  color: #fff;
+}
+.icon-ys-notification:before {
+  content: "\e914";
+  color: #fff;
+}
+.icon-ys-offers:before {
+  content: "\e915";
+  color: #fff;
+}
+.icon-ys-orderbook:before {
+  content: "\e916";
+  color: #fff;
+}
+.icon-ys-pdf .path1:before {
+  content: "\e917";
+  color: rgb(0, 0, 0);
+}
+.icon-ys-pdf .path2:before {
+  content: "\e918";
+  margin-left: -0.869140625em;
+  color: rgb(0, 98, 169);
+}
+.icon-ys-portfolio:before {
+  content: "\e919";
+  color: #fff;
+}
+.icon-ys-recommendations:before {
+  content: "\e91a";
+  color: #fff;
+}
+.icon-ys-rightarrow:before {
+  content: "\e91b";
+  color: #9b9b9b;
+}
+.icon-ys-rupee:before {
+  content: "\e91c";
+  color: #808080;
+}
+.icon-ys-tradebook:before {
+  content: "\e91d";
+  color: #fff;
+}
+.icon-ys-uparrow:before {
+  content: "\e91e";
+  color: #0062a9;
+}
+.icon-ys-watchlist:before {
+  content: "\e91f";
+  color: #fff;
+}
+.icon-yes-product-buysell:before {
+  content: "\e920";
+  color: #fff;
+}
